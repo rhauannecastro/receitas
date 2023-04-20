@@ -1,0 +1,9 @@
+$(document).ready(function() {
+    //reconhecendo o checkbox e ativando a li
+    $(".list-check").find(":checked").parent().toggleClass("checked");
+    $(".list-check").find(":disabled").parent().toggleClass("disabled");
+    $(".list-check :checkbox").click(function () {
+    $(this).parent().toggleClass("checked");
+    });
+    });
+    

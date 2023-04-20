@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Raleway:ital,wght@1,600&display=swap');
+
+*{
+    padding: 0;
+    margin:  0;
+}
+body{
+    background: #EEE9DA;
+    color:      #242323;
+    max-width: 1200px;
+    margin:    0 auto;
+    padding:   2px;
+    font-family: 'Playfair Display', serif;
+
+}
+/* titulo */
+#cabecalho{
+    display:         flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    align-items:     center;
+    padding:         15px;
+}
+
+h1{
+    color:      #3C84AB;
+    font-size:  3em;
+    
+  }
+h2{
+    font-size:   35px;
+    color:       #144272;
+    text-align:  center;
+  }
+h3{
+    font-size:   20px;
+    color:       #2C74B3;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+h6{
+    font-size:   13px;
+    color:       #413F42;
+    text-align:  center;
+    margin-top: 2px;
+    margin-bottom: 35px;
+}
+article{
+    margin-left: 10rem;
+    margin-bottom: 15px;
+  }
+#titulo{
+    padding: 10px;
+}
+
+
+/* menu */
+li{
+    padding:        18px;
+    font-size:      15px;
+    display: inline-block;
+    /* espaçamento entre os item listados*/
+    margin: 15px;
+
+}
+#button:link, #button:visited{
+    color: #2C74B3;
+}
+#button:hover{
+    border: 2px solid #0A2647;
+    background-color: #D8D8D8;
+    color:            #0A2647;
+    transition: 0.3s all;
+    border-radius:  15px;
+    padding-top:    10px;
+    padding-bottom: 10px;
+    padding-left:   10px;
+    padding-right:  10px;
+}
+.receita-button{
+    border: 2px solid #0A2647;
+    background-color: #D8D8D8;
+    color:            #0A2647;
+    padding:          10px;
+    border-radius:    15px;
+}
+
+a{
+    text-decoration: none;
+}
+/* texto */
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: 'Raleway', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px ;
+}
+/* imagem */
+#boloC{
+    width:   340px;
+    margin-left: 300px;
+    margin-top: 5px;
+}
+/* scrollbar */
+body::-webkit-scrollbar{
+    width: 5px;
+    background: #D8D8D8;
+ }
+ body::-webkit-scrollbar-thumb{
+
+     background: #2C74B3;
+ }
+
+ /* ingredientes */
+.list-check{
+    display:        flex;
+    flex-direction: column;
+    margin:         1px;
+  }
+div:after, ol:after, li:after, form:after, ul:after, dl:after,q:after {
+    content:    ".";
+    display:    block;
+    clear:      both;
+    visibility: hidden;
+    height:     0;
+    overflow:   hidden;
+}
+
+.list-check li {
+    padding:                10px;
+    color:                  #0A2647;
+    backdrop-filter:        blur(15px);
+    background:             rgba(255, 255, 255,.15);
+    box-shadow:              0 0 10px 1px #0A2647;
+    -webkit-backdrop-filter: blur(15px);
+    margin-bottom:           10px;
+    margin-left:             10px;
+    margin-right:            10px;
+}
+.list-check li:hover {
+    padding:            10px;
+    color:              #0A2647;
+    backdrop-filter:    blur(15px);
+    background:         rgba(122, 117, 117, 0.15);
+    box-shadow:         0 0 10px 1px #3C84AB;
+    -webkit-backdrop-filter: blur(15px);
+}
+.list-check li label {
+cursor:  pointer;
+color:   #0A2647;/* letras */
+font-size:1.2em;
+line-height:1.3em;
+}
+
+.list-check li:hover label {
+    color:#0A2647;/* letras */
+}
+.list-check input[type="checkbox"], .multi-column-check input[type="checkbox"] {
+    cursor:pointer;
+    margin-right:5px;
+}
+.list-check li.checked {
+    background: no-repeat 10px center;
+    padding-left:32px;
+}
+.list-check .checked input[type="checkbox"] {
+    display: none;
+}
+.list-check li.checked:hover input[type="checkbox"] {
+    display:inline !important;
+    text-align: center;
+}

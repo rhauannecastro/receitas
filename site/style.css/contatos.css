@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Raleway:ital,wght@1,600&display=swap');
+
+*{
+    padding: 0;
+    margin:  0;
+}
+body{
+    background: #EEE9DA;
+    color:      #242323;
+    max-width:  1200px; 
+    margin:     0 auto;
+    padding:    2px;
+    font-family:'Playfair Display', serif;
+   
+}
+/* titulo */
+#cabecalho{
+    display:         flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    align-items:     center;
+    padding:         15px;
+}
+
+h1{
+    color:      #3C84AB;
+    font-size:  3em;
+  }
+  h2{
+    font-size:   35px;
+    color:       #144272;
+    text-align:  center;
+  }
+h3{
+    font-size:  15px;
+    color:      #555151;
+    text-align: center;
+}
+#titulo{
+    padding: 10px;
+}
+
+/* menu */
+li{
+    padding:    18px;
+    font-size:  15px;
+    display:    inline-block;
+    margin:     15px; /* espaçamento entre os item listados*/
+    
+}
+#button:link, #button:visited{
+    color: #2C74B3;
+}
+#button:hover{
+    border: 2px solid #0A2647;
+    background-color: #D8D8D8;
+    color:            #0A2647; 
+    transition:     0.3s all;
+    border-radius:  15px;
+    padding-top:    10px;
+    padding-bottom: 10px;
+    padding-left:   10px;
+    padding-right:  10px;
+}
+.contatos-button{
+    border: 2px solid #0A2647;
+    background-color: #D8D8D8;
+    color:            #0A2647;   
+    padding:          10px;
+    border-radius:    15px;
+}
+
+a{
+    text-decoration: none;
+}
+/* texto */
+p{
+    line-height:  20px;
+    max-width:    500px;
+    font-family:  'Raleway', sans-serif;
+    color:        #0A2647;
+} 
+
+main{
+    display:        flex;
+    flex-direction: column;
+    margin-top:     20px ;
+}
+/* receitas */
+article{  
+    padding:            20px;
+    border-radius:      15px;
+}
+.coluna:hover{  
+    transition:       0.3s all;
+    border-radius:    15px;
+    padding:          5px;
+    cursor:           pointer;
+    margin:           15px;
+}
+.coluna{
+    float:      left;
+    width:      32%;
+    text-align: center;
+}
+  .row::after {
+    content:   "";
+    clear:     both;
+    display:   table;
+}
+/* scrollbar */
+body::-webkit-scrollbar{
+    width: 5px;
+    background: #D8D8D8;
+ }
+ body::-webkit-scrollbar-thumb{
+ 
+     background: #2C74B3;
+ }
